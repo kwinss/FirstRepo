@@ -17,6 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UIView *view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen]applicationFrame]];
+    view.backgroundColor = [UIColor whiteColor];
+    self.view = view;
+    
+    CGRect rect = CGRectMake(100, 100, 300, 100);
+    UILabel *textLabel = [[UILabel alloc] initWithFrame:rect];
+    textLabel.text = @"Hello, World!";
+    textLabel.textColor = [UIColor blueColor];
+    
+    [self.view addSubview:textLabel];
 }
 
 - (void)didReceiveMemoryWarning {

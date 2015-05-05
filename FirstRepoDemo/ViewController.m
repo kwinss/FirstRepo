@@ -23,8 +23,8 @@
     
     CGRect rect = CGRectMake(100, 100, 300, 100);
     UILabel *textLabel = [[UILabel alloc] initWithFrame:rect];
-    textLabel.text = @"Hello, World!";
-    textLabel.textColor = [UIColor blueColor];
+    textLabel.text = @"Hello, World!Hello, World!";
+    textLabel.textColor = [UIColor darkTextColor];
     
     [self.view addSubview:textLabel];
 }
